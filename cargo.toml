@@ -1,0 +1,13 @@
+[package]
+name = "liquid_token_distributor"
+version = "0.1.0"
+authors = ["Bobbo Fuxx"]
+edition = "2018"
+
+[dependencies]
+cosmwasm-std = { version = "0.16", features = ["serde", "serde-cw"] }
+cw-storage-plus = "0.9"
+cw20 = "0.10" # CW20 for token interaction (assuming liquidPRYSM and liquidBTC are CW20 tokens)
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
